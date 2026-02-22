@@ -5,6 +5,9 @@ Protocol-compliant adapter for polycall.exe runtime
 """
 
 from setuptools import setup, find_packages
+
+setup()
+
 import os
 import sys
 
