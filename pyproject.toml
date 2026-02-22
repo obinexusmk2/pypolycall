@@ -1,0 +1,33 @@
+[build-system]
+requires = ["setuptools>=68", "wheel"]
+build-backend = "setuptools.backends.legacy:build"
+
+[project]
+name = "pypolycall"
+version = "1.0.0"
+description = "Protocol-compliant Python adapter for polycall.exe runtime (LibPolyCall Trial v1)"
+readme = "README.md"
+license = { text = "MIT" }
+authors = [
+    { name = "Nnamdi Michael Okpala", email = "nnamdi@obinexuscomputing.com" }
+]
+requires-python = ">=3.8"
+keywords = ["polycall", "obinexus", "protocol", "adapter", "libpolycall"]
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "License :: OSI Approved :: MIT License",
+    "Operating System :: OS Independent",
+]
+dependencies = []
+
+[project.urls]
+Homepage = "https://github.com/obinexusmk2/pypolycall"
+Documentation = "https://docs.obinexuscomputing.com/libpolycall/python-binding"
+Repository = "https://github.com/obinexusmk2/pypolycall"
+
+[project.scripts]
+pypolycall = "pypolycall.cli:main"
+
+[tool.setuptools.packages.find]
+where = ["."]
+include = ["pypolycall*"]
